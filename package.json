@@ -1,0 +1,23 @@
+{
+  "name": "@cep/csinterface",
+  "version": "0.0.0",
+  "description": "A commonjs version of the Adobe-CEP/CEP-Resources CSInterface file",
+  "keywords": [
+    "cep",
+    "adobe",
+    "csinterface",
+    "adobe-cep"
+  ],
+  "files": [
+    "lib/csinterface.js"
+  ],
+  "main": "lib/csinterface.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmshal/cep-csinterface.git"
+  },
+  "scripts": {
+    "build": "mkdir -p lib && touch lib/csinterface.js && cat src/csinterface.js > lib/csinterface.js && cat src/footer.js >> lib/csinterface.js",
+    "prepublishOnly": "npm run build"
+  }
+}

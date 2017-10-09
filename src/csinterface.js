@@ -11,7 +11,7 @@
 *
 **************************************************************************************************/
 
-/** CSInterface - v6.1.0 */
+/** CSInterface - v7.0.0 */
 
 /**
  * Stores constants for the window types supported by the CSXS infrastructure.

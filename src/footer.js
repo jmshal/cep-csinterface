@@ -19,5 +19,7 @@ module.exports = {
   HostEnvironment: HostEnvironment,
   HostCapabilities: HostCapabilities,
   ApiVersion: ApiVersion,
+  MenuItemStatus: MenuItemStatus,
+  ContextMenuItemStatus: ContextMenuItemStatus,
   CSInterface: CSInterface,
 };

@@ -19,5 +19,8 @@
   "scripts": {
     "build": "mkdir -p lib && touch lib/csinterface.js && cat src/csinterface.js > lib/csinterface.js && cat src/footer.js >> lib/csinterface.js",
     "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

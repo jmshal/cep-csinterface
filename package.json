@@ -1,6 +1,6 @@
 {
   "name": "@cep/csinterface",
-  "version": "5.2.0",
+  "version": "6.1.0",
   "description": "A CommonJS version of the Adobe-CEP/CEP-Resources CSInterface library",
   "keywords": [
     "cep",

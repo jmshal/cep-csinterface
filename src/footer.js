@@ -1,6 +1,19 @@
 
 
-module.exports = {
+(function(_) {
+  if (typeof module !== "undefined" && module.exports) {
+    // commonjs
+    module.exports = _;
+  } else {
+    // browser
+    var hasOwnProperty = Object.prototype.hasOwnProperty;
+    for (var key in _) {
+      if (hasOwnProperty.call(_, key)) {
+        window[key] = _[key];
+      }
+    }
+  }
+})({
   CSXSWindowType: CSXSWindowType,
   Version: Version,
   VersionBound: VersionBound,
@@ -22,4 +35,4 @@ module.exports = {
   MenuItemStatus: MenuItemStatus,
   ContextMenuItemStatus: ContextMenuItemStatus,
   CSInterface: CSInterface,
-};
+});

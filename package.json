@@ -9,15 +9,17 @@
     "adobe-cep"
   ],
   "files": [
-    "lib/csinterface.js"
+    "lib/csinterface.js",
+    "lib/csinterface.d.ts"
   ],
   "main": "lib/csinterface.js",
+  "types": "lib/csinterface.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/jmshal/cep-csinterface.git"
   },
   "scripts": {
-    "build": "mkdir -p lib && touch lib/csinterface.js && cat src/csinterface.js > lib/csinterface.js && cat src/footer.js >> lib/csinterface.js",
+    "build": "mkdir -p lib && touch lib/csinterface.js && cat src/csinterface.js > lib/csinterface.js && cat src/footer.js >> lib/csinterface.js && cp src/csinterface.d.ts lib/csinterface.d.ts",
     "prepublishOnly": "npm run build"
   },
   "publishConfig": {
